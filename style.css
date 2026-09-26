@@ -599,3 +599,49 @@ input[type="range"]::-webkit-slider-thumb{
     background-color: #1ed760; /* Slightly brighter green on hover */
     transform: scale(1.04);
 }
+
+
+
+@media (max-width: 768px) {
+    /* 1. Hide the sidebars completely on mobile */
+    .main-left-part,
+    .right-sidebar {
+        display: none;
+    }
+
+    /* 2. Hide the desktop-only nav links (Premium, Sign Up, etc.) */
+    .nav-right {
+        display: none;
+    }
+
+    /* 3. Hide the volume controls on the bottom player */
+    .right-miscs {
+        display: none;
+    }
+
+    /* 4. Make the center music feed take up 100% of the screen */
+    .main-right-part {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    /* 5. Adjust the Nav bar and Search bar to fit the small screen */
+    .nav-center {
+        justify-content: flex-start;
+    }
+    
+    .search-bar {
+        width: 100%; /* Lets the search bar shrink to fit the phone */
+        max-width: 250px;
+    }
+
+    /* 6. Adjust the bottom player to fit */
+    .player-bar {
+        padding: 0 0.5rem;
+    }
+    
+    #progress-bar {
+        width: 150px; /* Shortens the song progress bar for mobile */
+    }
+}
