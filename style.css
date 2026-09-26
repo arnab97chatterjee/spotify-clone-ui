@@ -1,0 +1,601 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(0, 0, 0, 0.926);
+}
+
+/*!            NAV--BAR           */
+nav{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    width:100vw;
+}
+
+/*todo) ------------LEFT SIDE---------------*/
+/*  .left-half{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    flex: 1;
+} */
+.logo{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+.home-icon{
+    font-size: 1.75rem;
+    background-color: #1f1f1f;
+    color: rgb(179, 179, 179);
+    padding: 8px;
+    border-radius: 50%;
+    margin: 0 1rem;
+
+}
+
+
+.home-icon:hover{
+    color: white;
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-bar{
+    display: flex;
+    height: 3rem;
+    width: 25rem;
+    border-radius: 20rem;
+    background-color: #1f1f1f;
+    align-items: center;
+
+
+}
+
+.search-bar:hover{
+    background-color: #272727;
+    border: 1px solid rgb(76, 76, 76);
+
+}
+
+.search-icon{
+    font-size:1.5rem ;
+    color: rgb(179, 179, 179);
+    padding: 0 0.7rem;
+}
+.search-bar:hover .search-icon{
+    color: aliceblue;
+}
+.input-box{
+    width: 78%;
+    height: 60%;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid rgb(179, 179, 179);
+    color: azure;
+    font-size: 1.2rem;
+}
+.browse-icon{
+    font-size: 1.3rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+.browse-icon:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+/*todo ---------------------------------------------------------------------------*/
+
+
+/*todo) ------------RIGHT SIDE---------------*/
+/* .right-half{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    width: 48%;
+
+} */
+.rh-p1{
+    display: flex;
+    align-items: center;
+    height: 1.7rem;
+    margin: 0 1rem;
+    padding: 0 1rem 0 0;
+    justify-content:space-between;
+    border-right: 1px solid rgb(179, 179, 179);
+
+}
+
+
+nav {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+.nav-left {
+    width: 320px; 
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.nav-center {
+    display: flex;
+    flex: 1; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: aliceblue;
+}
+.home-icon {
+    font-size: 1.75rem;
+    background-color: #1f1f1f;
+    color: rgb(212, 212, 212);
+    padding: 8px 10px;
+    border-radius: 50%;
+    margin-right: 1ren ;
+    color: #ffffff;
+}
+
+
+.nav-txt{
+    padding: 0 0.5rem;
+    font-weight: 600;
+    color: rgb(179, 179, 179);
+}
+.nav-txt:hover{
+    color: aliceblue;
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.rh-p2{
+    display: flex;
+    align-items: center;
+
+}
+.login-btn{
+    height: 3rem;
+    width: 7rem;
+    border-radius: 15rem;
+    border: none;
+    background-color: aliceblue;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem; 
+    transition: 0.2s;
+}
+.login-btn:hover{
+    transform: scale(1.05);
+   
+}
+
+
+
+
+
+ /* todo Main-LEFT PART   */
+ .main{
+    background-color:black;
+    color: aliceblue;
+    width: 100%;
+    height: calc(100vh - 4rem - 5rem);
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    /*! justify-content: space-around; */
+
+ }
+ .main-left-part{
+    width: 320px;
+    flex-shrink: 0;
+    height: 100%;
+    background-color: #151515d4;
+    border-radius: 10px;
+    overflow-y: auto;
+ }
+ .main-left-part::-webkit-scrollbar,
+.right-sidebar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Brave */
+}
+ .main-right-part{
+    /*! width: 75%; */
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    background-color:#121111c0 ;
+    border-radius: 10px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+ }
+ .main-right-part::-webkit-scrollbar{
+    display: none;
+ }
+ .library{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.5rem;
+ }
+ .library p{
+    font-weight: 600;
+ }
+ .library div{
+    font-size: 2rem;
+    color: #a09e9e;
+    background-color: #3f3f3f;
+    border-radius: 100%;
+    padding: 7px;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+ }
+ .library div:hover{
+    cursor: pointer;
+    color: aliceblue;
+    background-color: #2f2f2f;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+ 
+.box-container{
+    margin-top: 1.5rem;
+    height: 100%;
+}
+.box{
+    background-color: #242424;
+    border-radius: 10px;
+    height: auto;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.box h4{
+    font-weight: 600;
+    font-size: 0.95rem;
+    font: 0.9rem;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+}
+.box p{
+    font-size: 0.8rem;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    /* padding-left: 1rem; */
+}
+.box button{
+    background-color: aliceblue;
+    color: black;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 150px;
+    border: none;
+
+}
+.box button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+    background-color: #ffffff;
+}
+
+ /*todo)          Main-RIGHT PART          */
+ .music-card img{
+     height: 10rem;
+     width: 10rem;
+     object-fit: cover;
+     object-position: center;
+     border-radius: 5px;
+    }
+    .music-card{
+        width: 10rem;
+        pad: 0.7rem;
+        border-radius: 5px;
+        flex-shrink: 0;
+        position: relative;
+    }
+    .music-card:hover{
+        background-color: #222;
+    }
+    .music-section{
+        margin: 2rem 0 2rem 2rem;
+    }
+    .songs{
+        margin: 2rem 0;
+        display: flex;
+        gap: 1.5rem;
+        overflow-x:auto;
+        scroll-behavior: smooth;
+        
+      scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .songs::-webkit-scrollbar{
+        display: none;
+    }
+    .music-card{
+        flex: 0 0 10rem;
+        scroll-snap-align: start;
+    }
+.img-title{
+    margin: 0.7rem 0;
+} 
+.img-description{
+    font-size: 0.7rem;
+}
+.music-play-btn{
+    color: rgba(32, 234, 32);
+    font-size: 2.7rem;
+    position: absolute;
+    background-color: #1f1f1f;
+    width: 2.7rem;
+    display: flex;
+    border-radius: 20rem;
+    transform: translate(110px,-40px);
+    opacity: 0;
+}
+.music-card:hover .music-play-btn{
+    opacity: 1;
+    /* display: flex; */
+    transform: translate(110px,-50px);
+    transition: 0.3s;
+}
+/* Circular styling for the artist cards */
+.artist-card {
+    width: 10rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    flex-shrink: 0;
+    transition: background-color 0.2s;
+}
+
+.artist-card:hover {
+    background-color: #222;
+}
+
+/* Makes the artist image completely round */
+.artist-card img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.artist-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    color: aliceblue;
+}
+
+.artist-role {
+    font-size: 0.8rem;
+    color: rgb(179, 179, 179);
+    margin-top: 0.3rem;
+}
+
+
+                      /* todo PLAYER */
+
+
+.player-bar{
+    width: 100%;
+    height: 5rem;
+    margin-top:0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b0b0b;
+}
+
+.music-ctrler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player{
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: center;
+   
+}
+.player-btns{
+    font-size: 1.5rem;
+    margin: 0.4rem 1rem;
+    color: rgb(190, 194, 197);
+    cursor: pointer;
+}
+.player-btns:hover{
+    color: aliceblue;
+    transform: scale(0.3px);
+    transition: ease-in;
+    transition: 0.3s;
+}
+#play{
+    font-size: 2.3rem;
+    color: #d5d2d2;
+}
+#progress-bar{
+    /* appearance: none; */
+    width: 600px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+input[type="range"]::-webkit-slider-thumb{
+   /* appearance: none; */
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.now-bar{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.player-bar img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10px;
+    padding: 0.3rem;
+
+}
+.img-title-info{
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+.img-desciption-info{
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+
+.right-miscs {
+    display: flex;
+    flex-direction: row;       
+    align-items: center;       
+    gap: 1rem;                 
+    color: #b3b3b3;
+    padding-right: 1.5rem;
+}
+
+/* Icon Styles */
+.right-miscs i {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.right-miscs i:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* --- Spotify Volume Slider Styling --- */
+#sound-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 6rem;               /* Slider width */
+    height: 4px;               /* Thin bar height */
+    background: #4d4d4d;       /* Unfilled bar background */
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#sound-bar:hover {
+    background: #f3f5f4;       /* Turns Spotify green on hover */
+}
+
+/* Slider Thumb (The circular knob) - WebKit (Chrome, Edge, Brave, Safari) */
+#sound-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    opacity: 0;                /* Hidden by default like Spotify */
+    transition: opacity 0.2s ease;
+}
+
+/* Show the white thumb only when hovering over the slider */
+#sound-bar:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+/* Slider Thumb for Firefox */
+#sound-bar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+#sound-bar:hover::-moz-range-thumb {
+    opacity: 1;
+}
+
+
+
+
+.right-sidebar {
+    width: 340px;      
+    flex-shrink: 0;
+    height: 100%;
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.promo-box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.promo-img {
+    width: 100%; /* Makes the image fit exactly inside the sidebar */
+    border-radius: 8px; /* Softens the corners */
+    margin-bottom: 1rem; /* Space between image and text */
+    object-fit: cover;
+}
+
+.promo-btn {
+    background-color: #1db954; /* Spotify Green */
+    color: #000000;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 500px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.promo-btn:hover {
+    background-color: #1ed760; /* Slightly brighter green on hover */
+    transform: scale(1.04);
+}

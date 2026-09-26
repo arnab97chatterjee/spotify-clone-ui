@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spotify-Web Player Clone: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>       
+    <!-- A) Logo (Far Left) -->
+    <div class="nav-left">
+         <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+    </div>
+
+    <!-- B) Home & Search (Perfect Center) -->
+    <div class="nav-center">
+         <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+         <div class="search-bar" id="searchBar">
+            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" class="input-box" placeholder="What do you wanna play ?">
+            <div class="browse-icon"><i class="fa-regular fa-folder"></i></div>
+         </div>
+    </div>
+
+    <!-- C) Right Side Portion (Far Right) -->
+    <div class="nav-right">
+        <div class="rh-p1">
+            <p class="nav-txt">Premium</p>
+            <p class="nav-txt">Support</p>
+            <p class="nav-txt">Download</p>
+        </div>
+        <div class="rh-p2">
+            <div class="nav-txt"><i class="fa-solid fa-circle-down"></i>Install App</div>
+            <div class="nav-txt">Sign up</div> 
+            <button class="login-btn">Log in</button>
+        </div>
+    </div>
+</nav>
+    <!--todo)        Main-LEFT PART -->         
+    <div class="main">
+     
+
+        <div class="main-left-part">
+            <div class="library">
+                <p>Your Library</p>
+                 <div> + </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button class="mlp-btn">Create playlist</button>
+                </div>
+                <div class="box">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button class="mlp-btn">Browse podcasts</button>
+                </div>
+            </div>
+
+        </div>
+                 
+        
+        
+        
+        <!--todo)        Main-RIGHT PART --> 
+        <div class="main-right-part">
+            <div class="music-section">
+                    <h2>Popular Songs</h2>
+                    <div class="songs">
+                        <div class="music-card">
+                            <img src="image/1.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Dhinchkyaaon Dhoom Dhoom!!!</div>
+                            <div class="img-description">Ali Zafar, Shreya Ghoshal-Chasme Baddoor</div>
+                        </div> 
+                        
+                        <div class="music-card">
+                            <img src="image/2.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Dildaara</div>
+                            <div class="img-description">Vishal Sekhar, Safqat, Kumaar</div>
+                        </div>   
+
+                        <div class="music-card">
+                            <img src="image/3.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Kabhi Yaadon Mein Aaun</div>
+                            <div class="img-description">Abhijeet Bhattacharya</div>
+                        </div>   
+
+                        <div class="music-card">
+                            <img src="image/4.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Kashmir Main, Tu Kanyakumari</div>
+                            <div class="img-description"> Neeti Mohan,Arijit Singh,Sunidhi Chauhan.</div>
+                        </div>  
+                        
+                        <div class="music-card">
+                            <img src="image/5.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Mai Khud Apni Talash Me Hoon</div>
+                            <div class="img-description">Osmaan Mir</div>
+                        </div>   
+
+                        <div class="music-card">
+                            <img src="image/6.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Lonely Is The Man Without Love</div>
+                            <div class="img-description">Engelbert Humperdinck</div>
+                        </div>  
+                        
+                        <div class="music-card">
+                            <img src="image/7.jpg" alt="">
+                            <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                            <div class="img-title">Mere Dholna Sun</div>
+                            <div class="img-description">Sonu Nigan</div>
+                        </div>   
+                        
+
+                         
+                            <div class="music-card">
+                                <img src="image/22.jpg" alt="">
+                                <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                                <div class="img-title">Tum Hi Ho</div>
+                                <div class="img-description">Arijit Singh, Mithoon</div>
+                            </div>  
+
+                            
+                            <div class="music-card">
+                                <img src="image/23.jpg" alt="">
+                                <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                                <div class="img-title">Chaiyya Chaiyya</div>
+                                <div class="img-description">Sukhwinder Singh, Sapna Awasthi</div>
+                            </div>
+                         
+                    </div> <!--  CLOSES THE SONGS   -->
+                </div>     <!-- closes music section -->
+            
+            
+           <!-- SECTION 2: TRENDING NOW -->
+            <div class="music-section">
+                <h2>Trending Now</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="image/8.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">oo Chokhe Amaar</div>
+                        <div class="img-description">Kumar Sanu,Pulak Banerjee </div>
+                    </div> 
+                    <div class="music-card">
+                        <img src="image/9.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Priyotama Mone Rekho</div>
+                        <div class="img-description">Kumar Sanu,Pulak Banerjee,Arup-Pranay</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/10.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Tumi Acho Eto Kache Tai</div>
+                        <div class="img-description">Surer Rajanigandha-Kumar Sanu</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/11.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Unko Bhi Humse Mohabbat Ho Zaroori To Nahi</div>
+                        <div class="img-description">Sadhana Sargam</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/12.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Zara Nazar Uthake Dekho, Baithe Hain Hum Yahi</div>
+                        <div class="img-description">Silk Route / Mohit Chauhan</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/13.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Metalingus</div>
+                        <div class="img-description">Alter Bridge,lead vocals-Myles Kennedy</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/14.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Cult of Personality</div>
+                        <div class="img-description">Living Colour,lead vocals-Corey Glover</div>
+                    </div>  
+
+
+                   <!-- Extra Card 1 -->
+                    <div class="music-card">
+                        <img src="image/24.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Teri Saanson Mein</div>
+                        <div class="img-description">Arijit Singh, Palak Muchhal & Amit Mishra</div>
+                    </div>  
+
+                    <!-- Extra Card 2 -->
+                    <div class="music-card">
+                        <img src="image/25.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Despacito</div>
+                        <div class="img-description">Luis Fonsi ft. Daddy Yankee</div>
+                    </div>
+
+
+                </div>   
+            </div>
+              
+           
+
+             
+            <!-- POPULAR ARTISTS SECTION -->
+            <div class="music-section">
+                <h2>Popular Artists</h2>
+                <div class="songs">
+                     
+                     <div class="artist-card">
+                        <img src="image/artist6.jpg" alt="Kishore Kumar">
+                        <div class="artist-title">Kishore Kumar</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="image/artist1.jpg" alt="Arijit Singh">
+                        <div class="artist-title">Arijit Singh</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="image/artist2.jpg" alt="Shreya Ghoshal">
+                        <div class="artist-title">Shreya Ghoshal</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="image/artist3.jpg" alt="Sonu Nigam">
+                        <div class="artist-title">Sonu Nigam</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="image/artist4.jpg" alt="Atif Aslam">
+                        <div class="artist-title">Atif Aslam</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+
+                    <div class="artist-card">
+                        <img src="image/artist5.jpg" alt="Kumar Sanu">
+                        <div class="artist-title">Kumar Sanu</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+                     
+                    <!-- Extra Artist 1 -->
+                    <div class="artist-card">
+                        <img src="image/artist7.jpg" alt="Lata Mangeshkar">
+                        <div class="artist-title">Lata Mangeshkar</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+
+                    <!-- Extra Artist 2 -->
+                    <div class="artist-card">
+                        <img src="image/artist8.jpg" alt="Shaan">
+                        <div class="artist-title">Shaan</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+
+                    <!-- Extra Artist 3 -->
+                    <div class="artist-card">
+                        <img src="image/artist9.jpg" alt="Udit Narayan">
+                        <div class="artist-title">Udit Narayan</div>
+                        <div class="artist-role">Artist</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- SECTION 3: RECOMMENDED FOR YOU -->
+            <div class="music-section">
+                <h2>Recommended For You</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="image/15.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Chashni</div>
+                        <div class="img-description">Abhijeet Srivastava</div>
+                    </div> 
+                    <div class="music-card">
+                        <img src="image/16.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Until I Found You</div>
+                        <div class="img-description">Stephen Sanchez</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/17.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Aahista Aahista-Laila Majnu</div>
+                        <div class="img-description">Arijit Singh & Jonita Gandhi</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/18.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Careless Whisper</div>
+                        <div class="img-description">George Michael</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/19.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Chammak Challo-Ra.One</div>
+                        <div class="img-description">Akon & Hamsika Iyer</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/20.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Mere Rashke Qamar</div>
+                        <div class="img-description">Nusrat Fateh Ali Khan & Rahat Fateh Ali Khan</div>
+                    </div>  
+                    <div class="music-card">
+                        <img src="image/21.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Yaadon Ki Baaraat</div>
+                        <div class="img-description">Lata Mangeshkar, Padmini Kolhapure & Shivangi Kolhapure</div>
+                    </div>  
+
+
+
+                    <!-- Extra Card 1 -->
+                    <div class="music-card">
+                        <img src="image/26.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Dekhechi Tomake-Fuller Aashore</div>
+                        <div class="img-description">Kumar Sanu</div>
+                    </div>  
+
+                    <!-- Extra Card 2 -->
+                    <div class="music-card">
+                        <img src="image/27.jpg" alt="">
+                        <div class="music-play-btn"><i class="fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Afghan Jalebi (Ya Baba)</div>
+                        <div class="img-description">Asrar</div>
+                    </div>
+                </div>   
+            </div>
+             
+
+
+        </div>      <!-- Closes: class="main-right-part" -->
+    
+
+
+
+       <!-- NEW 3RD COLUMN: RIGHT SIDEBAR -->
+<div class="right-sidebar">
+    <div class="sidebar-header" style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+        <h4 style="margin: 0;">Friend Activity</h4>
+        <i class="fa-solid fa-user-plus" style="color: #b3b3b3;"></i>
+    </div>
+    <p style="font-size: 0.8rem; color: #b3b3b3; line-height: 1.5;">
+        Let friends and followers on Spotify see what you're listening to.
+    </p>
+    
+   
+    <div class="promo-box">
+        <!-- The new promotional graphic -->
+        <img src="image/28.png" alt="Spotify Desktop App" class="promo-img">
+        
+        <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: aliceblue;">Download Spotify for Windows</h4>
+        
+        <p style="font-size: 0.75rem; color: #b3b3b3; line-height: 1.4; margin-bottom: 1.5rem;">
+            Enjoy high-quality audio, offline playback, and a lively friend feed to stay in tune with your friends' favourites.
+        </p>
+        
+        
+        
+<a href="https://www.spotify.com/download/windows/" target="_blank" class="promo-btn" style="text-decoration: none; text-align: center; display: inline-block; box-sizing: border-box;">Download the free app</a>
+    </div>
+</div> 
+
+
+
+
+
+    
+    </div>         <!-- Closes: class="main" -->
+
+
+
+
+
+                       <!--todo PLAYER -->
+        <div class="player-bar">
+            <div class="now-bar">
+                <img src="image/9.jpg" alt="">
+                <div>
+                    <div class="img-title-info">Priyotama Mone Rekho</div>
+                    <div class="img-desciption-info">Song: Kumar Sanu</div>
+                </div>
+                
+            </div>    <!--! NOW BAR ENDS HERE-->                       
+                        
+
+            <div class="music-ctrler">
+                <div class="player">
+                    <div id="shuffle"><i class="player-btns fa-solid fa-shuffle"></i></div>
+                    <div id="backward"><i class="player-btns fa-solid fa-backward"></i></div>
+                    <div><i id="play" class="player-btns fa-solid fa-play"></i></div>
+                    <div id="forward"><i class="player-btns fa-solid fa-forward"></i></div>
+                    <div id="repeat"><i class="player-btns fa-solid fa-repeat"></i></div>
+                </div>   <!--! PLAYER ENDS HERE-->
+                
+                <div>
+                  <input type="range" id="progress-bar" value="0">
+                </div>
+                   
+            </div>     <!--! MUSUC CONTROLLER ENDS HERE-->    
+
+
+            <div class="right-miscs">
+                
+                <i class="fa-solid fa-bars queue"></i>
+
+                <i class="fa-solid fa-laptop-file connect"></i>
+
+                <i class="fa-solid fa-volume-high volume-icon"></i>
+
+                <input type="range" min="0" max="100" value="70" id="sound-bar">
+
+                <i class="fa-solid fa-up-right-and-down-left-from-center full-screen"></i>
+            </div>
+              
+
+        </div>    <!--! PLAYER BAR ENDS HERE-->    
+    
+
+</body>
+</html>
