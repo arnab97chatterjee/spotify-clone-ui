@@ -368,7 +368,7 @@ nav {
     transform: translate(110px,-50px);
     transition: 0.3s;
 }
-/* Circular styling for the artist cards */
+
 .artist-card {
     width: 10rem;
     padding: 0.7rem;
@@ -381,7 +381,6 @@ nav {
     background-color: #222;
 }
 
-/* Makes the artist image completely round */
 .artist-card img {
     height: 10rem;
     width: 10rem;
@@ -445,7 +444,7 @@ nav {
     color: #d5d2d2;
 }
 #progress-bar{
-    /* appearance: none; */
+    
     width: 600px;
     height: 3px;
     background-color: #333;
@@ -503,14 +502,12 @@ input[type="range"]::-webkit-slider-thumb{
     color: #ffffff;
     transform: scale(1.05);
 }
-
-/* --- Spotify Volume Slider Styling --- */
 #sound-bar {
     -webkit-appearance: none;
     appearance: none;
-    width: 6rem;               /* Slider width */
-    height: 4px;               /* Thin bar height */
-    background: #4d4d4d;       /* Unfilled bar background */
+    width: 6rem;            
+    height: 4px;            
+    background: #4d4d4d;    
     border-radius: 4px;
     outline: none;
     cursor: pointer;
@@ -518,11 +515,9 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 #sound-bar:hover {
-    background: #f3f5f4;       /* Turns Spotify green on hover */
+    background: #f3f5f4;    
 }
-
-/* Slider Thumb (The circular knob) - WebKit (Chrome, Edge, Brave, Safari) */
-#sound-bar::-webkit-slider-thumb {
+#sound-bar::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
     width: 12px;
@@ -530,11 +525,9 @@ input[type="range"]::-webkit-slider-thumb{
     border-radius: 50%;
     background-color: #ffffff;
     cursor: pointer;
-    opacity: 0;                /* Hidden by default like Spotify */
-    transition: opacity 0.2s ease;
+    opacity: 0;             
+    transition: opacity 0.2s ease
 }
-
-/* Show the white thumb only when hovering over the slider */
 #sound-bar:hover::-webkit-slider-thumb {
     opacity: 1;
 }
@@ -577,14 +570,14 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 .promo-img {
-    width: 100%; /* Makes the image fit exactly inside the sidebar */
-    border-radius: 8px; /* Softens the corners */
-    margin-bottom: 1rem; /* Space between image and text */
+    width: 100%; 
+    border-radius: 8px; 
+    margin-bottom: 1rem; 
     object-fit: cover;
 }
 
 .promo-btn {
-    background-color: #1db954; /* Spotify Green */
+    background-color: #1db954;
     color: #000000;
     font-weight: 700;
     font-size: 0.85rem;
@@ -596,52 +589,92 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 .promo-btn:hover {
-    background-color: #1ed760; /* Slightly brighter green on hover */
+    background-color: #1ed760; 
     transform: scale(1.04);
 }
 
 
 
+
 @media (max-width: 768px) {
-    /* 1. Hide the sidebars completely on mobile */
+    
     .main-left-part,
-    .right-sidebar {
-        display: none;
-    }
-
-    /* 2. Hide the desktop-only nav links (Premium, Sign Up, etc.) */
-    .nav-right {
-        display: none;
-    }
-
-    /* 3. Hide the volume controls on the bottom player */
+    .right-sidebar,
+    .nav-right,
     .right-miscs {
-        display: none;
+        display: none !important;
     }
 
-    /* 4. Make the center music feed take up 100% of the screen */
+    
+    .main {
+        padding: 0 !important;
+        gap: 0 !important;
+    }
+
+   
     .main-right-part {
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
+        width: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        padding: 0 0.5rem !important;
     }
 
-    /* 5. Adjust the Nav bar and Search bar to fit the small screen */
+  
+    nav {
+        padding: 0 0.5rem !important;
+    }
+    .nav-left {
+        width: auto !important; 
+    }
     .nav-center {
-        justify-content: flex-start;
+        justify-content: flex-start !important;
+        margin-left: 0.5rem !important;
     }
-    
     .search-bar {
-        width: 100%; /* Lets the search bar shrink to fit the phone */
-        max-width: 250px;
+        width: 100% !important;
+        max-width: 200px !important;
+    }
+    .home-icon {
+        display: none !important; 
     }
 
-    /* 6. Adjust the bottom player to fit */
+    
     .player-bar {
-        padding: 0 0.5rem;
+        padding: 0 0.5rem !important;
+        justify-content: space-between !important;
+    }
+    .now-bar {
+        width: 50% !important;
+    }
+    .now-bar img {
+        height: 3rem !important;
+        width: 3rem !important;
     }
     
+    
+    .img-title-info, 
+    .img-desciption-info {
+        font-size: 0.8rem !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important; 
+    }
+    .img-desciption-info {
+        font-size: 0.7rem !important;
+    }
+
+    
+    .music-ctrler {
+        width: 50% !important;
+    }
     #progress-bar {
-        width: 150px; /* Shortens the song progress bar for mobile */
+        width: 120px !important;
+    }
+    .player-btns {
+        font-size: 1rem !important;
+        margin: 0 0.4rem !important;
+    }
+    #play {
+        font-size: 1.6rem !important;
     }
 }
