@@ -446,7 +446,7 @@ nav {
 #progress-bar{
     
     width: 600px;
-    height: 3px;
+    height: 2px;
     background-color: #333;
     border-radius: 5px;
     cursor: pointer;
